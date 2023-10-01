@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #2e1c5b;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #4e3b95;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin-right: 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Add CSS for button icons */
+        .leftSection .btn img {
+            width: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .rightSection img {
+            width: 130%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(143, 97, 186);
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(143, 97, 186);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .aboutSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .aboutSection>div {
+            width: 30%;
+        }
+
+        .aboutContent {
+            font-size: 2rem;
+        }
+
+        .aboutImage img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .contactSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .contactContent {
+            font-size: 2rem;
+        }
+
+        .contactContent ul {
+            list-style: none;
+        }
+
+        .contactContent ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Anirudh's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Anirudh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <!-- Add a link to your resume PDF file -->
+                    <a href="doc/resume.pdf" download>
+                        <button class="btn">
+                            <!-- Add a resume icon or text like "Resume" -->
+                            <img src="images/resume.png" alt="Resume">
+                        </button>
+                    </a>
+                    <!-- Add links for other buttons -->
+                    <a href="https://github.com/Ani-Cool" target="_blank">
+                        <button class="btn">
+                            <!-- Add a GitHub icon or text like "GitHub" -->
+                            <img src="images/github.png" alt="GitHub">
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anirudh-singh-4a09b1273" target="_blank">
+                        <button class="btn">
+                            <!-- Add a LinkedIn icon or text like "LinkedIn" -->
+                            <img src="images/ln.png" alt="LinkedIn">
+                        </button>
+                    </a>
+                    <a href="https://instagram.com/anirudh.singh.01?igshid=NzZhOTFlYzFmZQ==" target="_blank">
+                        <button class="btn">
+                            <!-- Add an Instagram icon or text like "Instagram" -->
+                            <img src="images/insta.png" alt="Instagram">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/c.png" alt="">
+                    <div class="vertical-text">
+                        C Programmer (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        During my first year of graduation, I immersed myself in learning C language. Within months, I
+                        embarked on practical projects, including replicating the Google Chrome Dinosaur Game and
+                        creating 2D animations using the graphics.h library. These endeavors ignited my passion for
+                        programming, fostering a journey of continuous growth in academia and my professional career.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/c++.png" alt="">
+                    <div class="vertical-text">
+                        C++ Programmer (2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        In my second year of graduation, I transitioned to C++ programming. In a matter of months, I
+                        dove into practical projects, such as developing a captivating Tic Tac Toe game and creating
+                        immersive 3D animations. These experiences fueled my passion for programming, laying the
+                        foundation for continued growth in both my academic studies and professional pursuits.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/unreal2.png" alt="">
+                    <div class="vertical-text">
+                        Game Developer/Designer (2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        During my third year of undergraduate studies, I further immersed myself in the world of game
+                        development using C++ within the Unreal Engine. Over the course of just a few months, I ventured
+                        into ambitious projects, crafting high-quality, graphically intense games that pushed the
+                        boundaries of visual and interactive experiences. These endeavors ignited my passion for game
+                        development, shaping my ongoing academic and professional journey in the field.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/python2.png" alt="">
+                    <div class="vertical-text">
+                        Python Programmer (2021-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        During my graduation, I embarked on a several-month journey to master the Python programming
+                        language. As a culmination of my efforts, I undertook a major project: the development of a
+                        cutting-edge web-based modern library system. Leveraging the power of Python, I employed popular
+                        web frameworks such as Django and Pyramid, resulting in a highly effective and sophisticated
+                        application.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/java.png" alt="">
+                    <div class="vertical-text">
+                        JAVA Programmer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum vel maiores tenetur, eos
+                        fuga tempora itaque tempore mollitia labore, nisi nobis quo laudantium corporis dolor. Facere
+                        blanditiis suscipit iste!
+                    </div>
+                </div>
+                <!-- <div class="vertical">
+                    <img class="image-top" src="images/web.png" alt="">
+                    <div class="vertical-text">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum vel maiores tenetur, eos
+                        fuga tempora itaque tempore mollitia labore, nisi nobis quo laudantium corporis dolor. Facere
+                        blanditiis suscipit iste!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/react.png" alt="">
+                    <div class="vertical-text">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum vel maiores tenetur, eos
+                        fuga tempora itaque tempore mollitia labore, nisi nobis quo laudantium corporis dolor. Facere
+                        blanditiis suscipit iste!
+                    </div>
+                </div> -->
+                <!-- Add more work experience entries as needed following the same structure -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="aboutSection">
+            <div class="aboutContent">
+                <h2>About Me</h2>
+                <p>
+                    Hi there! I'm Anirudh, a passionate developer with a love for creating innovative solutions. I have a strong background in web development, game design, and much more. My journey in the world of technology has been marked by continuous learning and a commitment to excellence.
+                </p>
+            </div>
+            <div class="aboutImage">
+                <img src="images/bg1.png" alt="Anirudh's Photo">
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="contactSection">
+            <div class="contactContent">
+                <h2>Contact Me</h2>
+                <p>
+                    If you'd like to get in touch, feel free to reach out to me. I'm always open to new opportunities and collaborations. You can contact me through the following channels:
+                </p>
+                <ul>
+                    <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/anirudh-singh-4a09b1273" target="_blank">Anirudh's LinkedIn Profile</a></li>
+                    <li>GitHub: <a href="https://github.com/Ani-Cool" target="_blank">Anirudh's GitHub Profile</a></li>
+                    <!-- Add more contact options as needed -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Anirudh's Development Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <!-- <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li> -->
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    
+                    <li>Services</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <!-- <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li> -->
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; anirudhsportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer', 'UI/UX Designer', 'Game Developer', 'Full Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
